@@ -1,0 +1,54 @@
+
+#wrapper{
+    background-color: navy;
+    width: 970px;
+    padding: 10px;
+}
+.main{
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    display: block;
+    padding: 1px 0 1px 10px;
+    margin: 0 0 15px 0;
+}
+.index{
+    background-color: darkcyan;
+    border-radius: 10px;
+    width: 180px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+    color: cyan;
+    text-decoration: underline;
+    padding: 10px;
+}
+.definition{
+    background-color: black;
+    border-radius: 10px;
+    width: 730px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    padding: 10px;
+    margin: 1px;
+}
+span{
+    color: purple;
+}
+a{
+    color: cyan;
+    text-decoration: underline;
+}
+.lastly{
+    background-color: gray;
+    border-radius: 10px;
+    width: 970px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    margin: 10px 0 0 0;
+}
