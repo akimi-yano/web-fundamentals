@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;    
+} 
+.header{
+    background-color: #F8F8F8;
+    width: 970px;
+    padding: 20px;
+}
+    .header h1, .header h2{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .header h1{
+        font-family: cursive;
+        font-weight: bold;
+        margin-right: 413px;
+    }
+.main{
+    background: linear-gradient(to right, #1D0D11 , #6F5964, #1D0D11);
+    width: 970px;
+    padding: 20px;
+}
+    .introduction img{
+        width: 380px;
+        border: 5px solid gray;
+}
+    .introduction img, .about-block{
+        display: inline-block;
+        vertical-align: top;
+    }
+    .about-block{
+        width: 547px;
+        background-color: white;
+        margin-left: 20px;
+        height: 259px;
+    }
+    .about-block h3{
+        background: linear-gradient(180deg, darkgray, gray, darkgray);
+        color: white;
+        padding: 10px;
+    }
+    .about-block p, .about-block a{
+        padding: 10px;
+        color: black;
+    }
+   
+.project{
+    display: inline-block; 
+    vertical-align: top;
+    width: 311px;
+    min-height: 580px;
+    background: linear-gradient(to right, white , #6F5964);
+    margin-top: 15px;
+}
+    .project h3{
+        background: linear-gradient(180deg, darkgray, gray, darkgray);
+        color: white;
+        padding: 10px;
+    }
+    .project-img{
+        width: 311px;
+    }
+    .project p{
+        padding: 10px;
+        min-height: 200px;
+    }
+    .icon{
+        display: inline-block;
+        vertical-align: top;
+        width: 45px;
+        padding: 5px;
+    }
+    .project button{
+        display: block;
+        color: white;
+        background-color: #407D61;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px black;
+        padding: 10px 15px;
+        margin: 20px auto;
+    }
+#example{
+    margin: 15px 10px 0px;
+}
+
+.small{
+    width: 20px;
+}
+.footer{
+    background-color: #F8F8F8;
+    width: 970px;
+    padding: 15px 25px 15px 15px;
+    text-align: center;
+}
+    .footer a .footer p{
+        display: inline-block;
+        vertical-align: middle;
+        color: black;
+    }
+    .footer a{
+        text-decoration : underline;
+    }
