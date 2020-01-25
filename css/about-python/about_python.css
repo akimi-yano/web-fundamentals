@@ -1,0 +1,225 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.header{
+    width: 970px;
+    background-color: #2b597c;
+    padding: 20px;
+}
+.python-logo{
+    display: inline-block;
+    vertical-align: middle;
+    width: 400px;
+    margin-right: 307px;
+}
+.header-block{
+    display: inline-block;
+}
+.text-size-block {
+    display: block;
+    vertical-align: middle;
+    text-align: right;
+    margin: 0px 30px 10px;
+    font-size: 15px;
+}
+    .text-size-block p{
+        color: white;
+        display: inline-block;
+    }
+    .text-size-block a{
+        color: yellow;
+        display: inline-block;
+        text-decoration: underline;
+    }
+    .text-size-block span{
+        color: black;
+        display: inline-block;
+    }
+.search-block{
+    display: block;
+    background-color: gray;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 10px;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    border-right-width: 25px;
+    border-left-width: 35px;
+    box-shadow: 2px 2px 5px black;
+}
+    .search-block input{
+        display: inline-block;
+        height: 25px;
+        width: 152px;
+        text-align: center;
+    }
+    .search-block button{
+        display: inline-block;
+        height: 20px;
+        width: 30px;
+        background-color: #2b597c;
+        color: white;
+        font-size: 9px;
+        border: 1px solid white;
+        border-radius: 5px;
+        margin: 3px;
+        box-shadow: 2px 2px 5px black;
+    }
+.navigation{
+    background-color: #2b597c;
+    width: 970px;
+    padding: 0px 20px 20px;
+}
+.bar{
+
+    background-color: rgb(79,124,169);
+    border: 1px solid rgb(79,124,169);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    width: 780px;
+    height: 49px;
+    margin-left: 93px;
+}
+.bar-options{
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    text-align: center;
+    margin: 15px 28px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.guide{
+    width: 970px;
+    padding: 20px;
+    background-color: #2b597c;
+}
+.guiding-link-block{
+    display: inline-block;
+    vertical-align: top;
+    width: 230px;
+    text-align: center;
+    padding-left: 50px;
+}   
+    .guiding-link-block span{
+        color: rgb(248,211,84);
+        font-size: 6px;
+        vertical-align: middle;
+        text-decoration: none;
+    }
+.guide-links{
+        color: white;
+        display: block; 
+        margin: 10px;
+}
+.guiding-word-block{
+    display: inline-block;
+    width: 650px;
+}
+    .guiding-word-block p{
+        color: white;
+        text-align: center;
+        font-size: 14px;
+        padding-right: 45px;
+    }
+    .guiding-word-block h2{
+        color: rgb(248,211,84);
+        text-align: center;
+        font-size: 17px;
+        font-style: italic;
+        margin: 10px;
+        padding-right: 45px;
+        font-weight: normal;
+    }
+    .guiding-word-block h3{
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        margin: 15px 15px 10px 15px;
+        padding-right: 45px;
+        font-weight: normal;
+    }
+.next-step{
+        background-color: white;
+        width: 970px;
+        padding: 20px;
+       
+}
+.start-block{
+        display: inline-block;
+        border-top: 3px solid rgb(128, 168,207);
+        width: 462px;
+        vertical-align: top;
+        margin: 0px 10px;
+} 
+        .start-block h2{
+            display: block;
+            margin: 5px 0px;
+            text-align: center;
+            font-weight: normal;
+        }
+        .start-block p{
+            display: block;
+            padding: 0px 53px;
+            text-align: center;
+            font-size: 15px;
+        }
+        .start-block ul{
+            display: block;
+            margin: 10px 0px;
+            text-align: center;
+            padding: 0px 100px;
+            color: #75a8d3;
+            font-size: 14px;
+        }
+.application-block{
+        display: inline-block;
+        border-top: 3px solid rgb(128, 168,207);
+        width: 462px;
+        vertical-align: top;
+        margin: 0px 10px;
+}
+    .application-block h2{
+            display: block;
+            margin: 5px 0px;
+            text-align: center;
+            font-weight: normal;
+    }
+    .application-block p{
+            display: block;
+            padding: 0px 53px;
+            text-align: center;
+            font-size: 15px;
+    }
+    .application-block span{
+            color: #75a8d3;
+            font-size: 15px;
+    }
+    .application-block ul{
+            display: block;
+            margin: 10px 0px;
+            text-align: center;
+            padding: 0px 100px;
+            color: #75a8d3;
+            font-size: 14px;
+    }
+.footer{
+    background-color: #2b597c;
+    width: 970px;
+    text-align: center;
+    padding: 30px 20px 15px 20px;
+}   
+.action-links{
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 17px;
+        color: lightblue;
+        margin: 10px;
+        text-decoration: none;
+}
+    .footer p{
+        font-size: 12px;
+        color: lightblue;
+    }
