@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+    img{
+        display: block; 
+        margin: 5px;
+        width: 300px;
+    }
+    </style>
+</head>
+<body>
+    <img src="./img/cat0.png" alt="">
+    <img src="./img/cat1.png" alt="">
+    <img src="./img/cat2.png" alt="">
+    <img src="./img/cat3.png"alt="">
+    <img src="./img/cat4.png"alt="">
+    <script>
+        $("img").click(function(){
+            var string =$(this).attr("src")
+            var number =string[string.length-5]
+            var myBoolean =string.includes("cat")
+            //if it has cat, it is true ; else false
+            if(myBoolean == true){
+                //switch to ninja
+                $(this).attr("src", "./img/ninja" + number + ".png")
+            }
+            else{
+                //switch to cat
+                $(this).attr("src", "./img/cat" + number + ".png")
+            }
+        })     
+    </script>
+</body>
+</html>
