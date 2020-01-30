@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        *{
+            margin : 0px;
+            padding : 0px;
+            font-family: sans-serif;
+        }
+        h1{
+            vertical-align: middle;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+        }
+        h5{
+            color: lightgreen;
+        }
+        .colors{
+            color: yellow;
+        }   
+        img{
+            padding: 5px;
+            width: 250px;
+            height: 190px;
+            display: block;
+        }
+        p{
+            font-style: italic;
+            color: lightblue;
+            margin: 5px 5px 5px 0px;
+        }
+        span{
+            color: pink;
+            font-weight: bold;
+            font-style: normal;
+            margin: 0px 5px;
+        }
+        .wrapper{
+            width: 970px;
+            background-color: darkblue;
+            padding: 20px;
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            background-color: red;
+            border: 1px solid red;
+            border-radius: 5px;
+            color: white;
+            margin: 5px 5px 5px 0px;
+        }
+        .click{
+            border-bottom: 1px solid black;
+            margin: 10px;
+            color: white;
+            vertical-align: middle;
+        }
+        .hide{
+            border-bottom: 1px solid black;
+            margin: 10px;
+            color: white;
+            vertical-align: middle;
+        }
+        .show{
+            border-bottom: 1px solid black;
+            margin: 10px;
+            color: white;
+            vertical-align: middle;
+        }
+        .toggle{
+            border-bottom: 1px solid black;
+            margin: 10px;
+            color: white;
+            vertical-align: middle;
+        }
+        .slidedown{
+            border-bottom: 1px solid black;
+            margin: 10px;
+            color: white;
+            vertical-align: middle;
+        }
+        .slideup{
+            border-bottom: 1px solid black;
+            margin: 10px;
+            color: white;
+            vertical-align: middle;
+        }
+        .slidetoggle{
+            border-bottom: 1px solid black;
+            margin: 10px;
+            color: white;
+            vertical-align: middle;
+        }
+        .fadein{
+            border-bottom: 1px solid black;
+            margin: 10px;
+            color: white;
+            vertical-align: middle;
+        }
+        .fadeout{
+            border-bottom: 1px solid black;
+            margin: 10px;
+            color: white;
+            vertical-align: middle;
+        }
+        .addclass{
+            border-bottom: 1px solid black;
+            margin: 10px;
+            color: white;
+            vertical-align: middle;
+        }
+        .before{
+            border-bottom: 1px solid black;
+            margin: 10px;
+            color: white;
+            vertical-align: middle;
+        }
+        .after{
+            border-bottom: 1px solid black;
+            margin: 10px;
+            color: white;
+            vertical-align: middle;
+        }
+        .append{
+            border-bottom: 1px solid black;
+            margin: 10px;
+            color: white;
+            vertical-align: middle;
+        }
+        .html{
+            border-bottom: 1px solid black;
+            margin: 10px;
+            color: white;
+            vertical-align: middle;
+        }
+        .attr{
+            border-bottom: 1px solid black;
+            margin: 10px;
+            color: white;
+            vertical-align: middle;
+        }
+        .val{
+            border-bottom: 1px solid black;
+            margin: 10px;
+            color: white;
+            vertical-align: middle;
+        }
+        .text{
+            border-bottom: 1px solid black;
+            margin: 10px;
+            color: white;
+            vertical-align: middle;
+        }
+    
+    </style>
+</head>
+<body>
+<div class="wrapper">
+
+    <h1>Let's Learn jQuery Functions!</h1>
+
+<div class="click">
+<h2>.click()</h2>
+<p>Click the button below to test the click function. It will show an alert that you successfully used the click function.</p>
+<button>Try</button>
+</div>
+
+<div class="hide">
+<h2>.hide()</h2>
+<p>Click the button below to test the hide function. It will hide this text: <span>This will be hidden!</span></p>
+<button>Try</button>
+</div>
+
+<div class="show">
+<h2>.show()</h2>
+<p>Click the button below to test the show function. There will be an message appeared here: <span>Yay, the show function worked!</span></p>
+<button>Try</button>
+</div>
+
+<div class="toggle">
+<h2>.toggle()</h2>
+<p>Click the button below to test the toggle function. The symbols below will dissapear with a click and come back with another click!</p> 
+<p>MY HAPPINESS LEVEL: <span>♡♡♡♡♡♡♡♡♡♡</span></p>
+<button>Try</button>
+</div>
+
+<div class="slidedown">
+<h2>.slideDown()</h2>
+<p>Click the button below to test the slide down function. A message will show up with a sliding motion: <span>Yeah, it works !</span></p>
+<button>Try</button>
+</div>
+
+<div class="slideup">
+<h2>.slideUp()</h2>
+<p>Click the button below to test the slide up function. The following message will be gone with a sliding motion: <span>If this dissapears, then I think I leared a lot today!</span></p>
+<button>Try</button>
+</div>
+
+<div class="slidetoggle">
+<h2>.slideToggle()</h2>
+<p>Click the button below to test the slide toggle function. By clicking, you can hide/display the symbols: <span>Σ(`･ω･Ⅲ)</span></p>
+<button>Try</button>
+</div>
+
+<div class="fadein">
+<h2>.fadeIn()</h2>
+<p>Click the button below to test the fade in function. A message will appear :) <span>See? Isn't this cool?</span></p>
+<button>Try</button>
+</div>
+
+<div class="fadeout">
+<h2>.fadeOut()</h2>
+<p>Click the button below to test the fade out function. A message will disappear :o <span>BYEEEEEE</span></p>
+<button>Try</button>
+</div>
+
+<div class="addclass">
+<h2>.addClass()</h2>
+<p>Click the button below to test the add class function. It will change the color of the following message: </p>
+<h5>COLORS MATTER SO MUCH ! WHEN THIS TEXT'S COLOR IS YOUR FAVORITE COLOR, THAT'LL MAKE YOU SMILE :D</h5>
+<button>Try</button>
+</div>
+
+<div class="before">
+<h2>.before()</h2>
+<p>Click the button below to test the before function. It will add a message before the following message: <span>is VERY useful!</span></p>
+<button>Try</button>
+</div>
+
+<div class="after">
+<h2>.after()</h2>
+<p>Click the button below to test the after function. It will add a message after the following message: <span>What are you in the mood for?</span></p>
+<button>Try</button>
+</div>
+
+<div class="append">
+<h2>.append()</h2>
+<p>Click the button below to test the append function. It will add a message before the text on the right: <span>I Really Love ... </span></p>
+<button>Try</button>
+</div>
+
+<div class="html">
+<h2>.html()</h2>
+<p>Click the button below to test the html function. It will replace the following message with another message: <span>What to do after school is over? (◍•ᴗ•◍)♡ ✧*。</span></p>
+<button>Try</button>
+</div>
+
+<div class="attr">
+<h2>.attr()</h2>
+<p>Click the button below to test the attr function. It will change the image below: </p>
+<img src="cat-img-1.jpg" alt="Image">
+<button>Try</button>
+</div>
+
+<div class="val">
+<h2>.val()</h2>
+<p>Click the button below to test the val function. <span>Choose: which country would you like to visit? </span></p>
+<button>China</button>
+<button>France</button>
+<button>Spain</button>
+<input type ="text" value = "click a button">
+</div>
+
+<div class="text">
+<h2>.text()</h2>
+<p>Click the button below to test the text function. It will replace the following message: <span>------CODING MODE------</span></p>
+<button>Try</button>
+</div>
+
+
+</div>
+
+
+    <script>
+    $('.click button').click(function(){
+        alert("Congrats! You used the click function !")
+    });
+
+    $('.hide button').click(function(){
+        $('.hide span').hide();
+    });
+
+    var message_status = false;
+    if (message_status == false){
+    $('.show span').hide();
+    };
+    $('.show button').click(function(){
+        if (message_status == false){
+        }$('.show span').show();
+    });
+
+    $('.toggle button').click(function(){
+        $('.toggle span').toggle();
+    });
+
+    var slidedown_status = false;
+    if (slidedown_status == false){
+    $('.slidedown span').hide();
+    };
+    $('.slidedown button').click(function(){
+        if (slidedown_status == false){
+            $('.slidedown span').slideDown();
+        }
+    });
+
+    $('.slideup button').click(function(){
+        $('.slideup span').slideUp();
+    });
+
+    $('.slidetoggle button').click(function(){
+        $('.slidetoggle span').slideToggle();
+    });
+
+    var fadein_status = false;
+    if (fadein_status == false){
+    $('.fadein span').hide();
+    };
+    $('.fadein button').click(function(){
+        if (fadein_status == false){
+            $('.fadein span').fadeIn();
+        }
+    });
+
+    $('.fadeout button').click(function(){
+        $('.fadeout span').fadeOut();
+    });
+
+    $('.addclass button').click(function(){
+        $('.addclass h5').addClass('colors');
+    });
+    $('.before button').click(function(){
+        $('.before span').before('jQuery');
+    });
+
+    $('.after button').click(function(){
+        $('.after span').after('Fried Chicken!');
+    });
+
+    $('.append button').click(function(){
+        $('.append span').append('Coding!');
+    });
+
+    $('.html button').click(function(){
+        $('.html span').html('<h1>Study Mooooooore xD !!!</h1>');
+    });
+
+    $('.attr button').click(function(){
+        $('.attr img').attr('src', 'cat-img-0.jpeg');
+    });
+  
+    $('.val button').click(function(){
+        var text = $(this).text();
+        $('.val input').val(text);
+    });
+
+    $('.text button').click(function(){
+        $('.text span').text('------SLEEPING MODE------');
+    });
+    
+    </script>
+</body>
+</html>
