@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        #pokemon{
+            display: inline-block;
+            width: 50vw;
+            padding: 4vw;
+        }
+        #focus{
+            display: inline-block;
+            vertical-align: top;
+            border: 5px solid black;
+            padding: 2vw;
+            width: 20vw;
+            margin: 5vw;
+            height: 35vw;
+        }
+    </style>
+</head>
+<body>
+    <div id="pokemon"></div>
+    <div id="focus"></div>
+
+    <script>
+    var pokemon_img ="";
+    for (var number=1; number<152; number+=1){
+        pokemon_img+='<img id=' + number + ' ' + 'src="http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/' + number + '.png">'
+    };
+    $('#pokemon').html(pokemon_img);
+
+   
+    $('img').click(function(){
+         var request ="http://pokeapi.co/api/v2/pokemon/";
+         request += ($(this).attr('id') + '/')
+         $.get(request, function(res){
+             var html_str =""
+             
+            html_str+="<h1>" +res.name+ "</h1>";
+             
+            html_str+="<h4>Order</h4>";
+            html_str+="<p>" +res.order+ "</p>";
+             
+            html_str+="<h4>ID</h4>";
+            html_str+="<p>" +res.id+ "</p>";
+
+            html_str+="<h4>Types</h4>";
+            html_str+="<ul>"
+            for (var i=0; i<res.types.length; i++){
+            html_str+="<li>" + res.types[i].type.name + "</li>";
+            }
+            html_str+="</ul>";
+
+            html_str+="<h4>Height</h4>";
+            html_str+="<p>" + res.height + "</p>";
+             
+            html_str+="<h4>Weight</h4>"
+            html_str+="<p>" + res.weight + "</p>";
+            
+            $('#focus').html(html_str);
+
+         })
+    });
+    
+   
+
+    
+    </script>
+</body>
+</html>
+
