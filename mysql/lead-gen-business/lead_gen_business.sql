@@ -79,11 +79,11 @@ use lead_gen_business;
 
 -- 9. Write a single query that retrieves total revenue collected from each client for each month of the year. Order it by client id.
 
--- select clients.first_name, clients.last_name, sum(amount) as total_revenue, monthname(charged_datetime) as month_charged, year(charged_datetime) as year_charged
--- from billing
--- join clients on clients.client_id = billing.client_id
--- group by YEAR(charged_datetime), MONTH(charged_datetime), clients.client_id
--- order by clients.client_id, charged_datetime;
+--  select concat(clients.first_name," ",clients.last_name) as client_name, sum(amount) as total_revenue, monthname(charged_datetime) as month_charged, year(charged_datetime) as year_charged
+--  from billing
+--  join clients on clients.client_id = billing.client_id
+--  group by YEAR(charged_datetime), MONTH(charged_datetime), clients.client_id
+--  order by clients.client_id, charged_datetime;
 
 -- 10. Write a single query that retrieves all the sites that each client owns. Group the results so that each row shows a new client. It will become clearer when you add a new field called 'sites' that has all the sites that the client owns. (HINT: use GROUP_CONCAT)
 
